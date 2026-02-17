@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Todo</title>
+</head>
+<body>
+
+<input type="text" id="textInput">
+<button onclick="addTask()">Add task</button>
+
+<ul id="taskList"></ul>
+
+<script>
+function addTask() {
+    var text = document.getElementById("textInput").value;
+    if (text === "") return;
+
+    var li = document.createElement("li");
+    var span = document.createElement("span");
+    span.innerText = text;
+
+    var doneBtn = document.createElement("button");
+    doneBtn.innerText = "Done";
+
+    var deleteBtn = document.createElement("button");
+    deleteBtn.innerText = "Delete";
+    deleteBtn.disabled = true;
+
+    doneBtn.onclick = function () {
+        if (span.style.textDecoration === "line-through") {
+            span.style.textDecoration = "none";
+            doneBtn.innerText = "Done";
+            deleteBtn.disabled = true;
+        } else {
+            span.style.textDecoration = "line-through";
+            doneBtn.innerText = "Undo";
+            deleteBtn.disabled = false;
+        }
+    };
+
+    deleteBtn.onclick = function () {
+        li.remove();
+    };
+
+    li.appendChild(span);
+
+    li.appendChild(doneBtn);
+    
+    li.appendChild(deleteBtn);
+
+    document.getElementById("taskList").appendChild(li);
+    document.getElementById("textInput").value = "";
+}
+</script>
+
+</body>
+</html>
