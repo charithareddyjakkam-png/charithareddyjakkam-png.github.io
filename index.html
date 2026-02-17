@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Charitha Reddy | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --primary: #2f3131;
+            --secondary: #2a2b4a;
+            --accent: #f7f2f2;
+            --bg: #c0cbce;
+            --card: rgb(115, 180, 186);
+        }
+
+        body {
+            margin: 0;
+            font-family: "helvetica", Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--primary);
+            line-height: 2.0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #7bd8b6, #9ecdff);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 43px;
+            letter-spacing: 1px;
+            color: #000;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #0f0f0f;
+        }
+
+        nav {
+            background-color: rgb(9, 63, 125);
+            position: sticky; 
+         }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 15px;
+            list-style: none;
+            gap: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: rgb(245, 232, 232);
+            font-weight: bold;
+        }
+    
+
+        section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        
+
+        .card {
+            background-color: var(--card);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .projects {
+            display: grid;
+            
+            gap: 25px;
+        }
+
+        .project-card {
+            background-color:  rgb(115, 180, 186);
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        .project-card:hover {
+            transform: translate(5px);
+        }
+
+        .project-card h3 {
+        
+            color: var(--primary);
+        }
+
+        .project-card p {
+            color: var(--secondary);
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skill {
+            background-color: rgb(115, 180, 186);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .skill:hover {
+            background-color: rgb(150, 131, 247);
+            }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+            color: #bdc3c7;
+        }
+        #d1{
+            width: 200px;
+            height: 200px;
+            background-image: url(Snapchat-1508294933.jpg);
+            background-size: cover;
+            margin: 20px auto;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+   
+
+    <h1>Jakkam Charitha Reddy</h1>
+    <p>Student and Aspiring Web Developer</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+            I am a motivated learner with a strong interest in web development and
+            problem-solving. My journey began with curiosity about how websites work
+            and gradually evolved into building complete applications that combine
+            logic, structure, and creativity.
+        </p>
+        <p>
+            I believe in writing clean, understandable code and continuously improving
+            through practice. I enjoy working on projects that are meaningful, practical,
+            and capable of creating real-world impact.
+        </p>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="projects">
+        <div class="project-card">
+            <h3>Cyber Bullying Detection System</h3>
+            <p>
+                A project focused on identifying and addressing cyber bullying on
+                digital platforms. The system aims to analyze user-generated content
+                and help promote a safer online environment.
+            </p>
+            <p>
+                This project strengthened my understanding of problem analysis,
+                logical flow, and socially responsible application design.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Edine Smart Restaurant Website</h3>
+            <p>
+                A smart restaurant web application designed to present menu details,
+                services, and digital interaction for customers in an organized
+                and user-friendly manner.
+            </p>
+            <p>
+                Through this project, I improved my skills in layout design,
+                content organization, and responsive web structure.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Additional Academic and Practice Projects</h3>
+            <p>
+                Includes portfolio websites, task management pages, basic
+                e-commerce layouts, and interactive forms developed to strengthen
+                core web development concepts.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills-list">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS Layout and Styling</div>
+        <div class="skill">JavaScript Fundamentals</div>
+        <div class="skill">Problem Solving</div>
+        <div class="skill">C programming</div>
+        <div class="skill">Python programming</div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email: charithareddyjakkam@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/jakkam-charitha-reddy-8b3b401ba/">Jakkam Charitha Reddy</a></p>
+        <p>
+            I am open to learning opportunities, and challenges
+            that help me grow as a developer.
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p> Jakkam Charitha Reddy.</p>
+</footer>
+
+</body>
+</html>
